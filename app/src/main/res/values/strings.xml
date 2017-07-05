@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlayMiniGame</string>
+
+    <!-- ClickGameString -->
+    <string name="clickgame_level_dialog_title">난이도</string>
+    <string name="clickgame_menu_level_easy">초급</string>
+    <string name="clickGame_menu_level_normal">중급</string>
+    <string name="clickGame_menu_level_hard">고급</string>
+</resources>
