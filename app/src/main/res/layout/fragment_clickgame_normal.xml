@@ -6,7 +6,27 @@
     android:orientation="vertical"
     android:background="@color/material_lime"
     tools:context="com.nammu.playminigame.clickgame.ClickGameActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/set_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/material_teal"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.nammu.playminigame.MiniGameApplication;
 import com.nammu.playminigame.R;
 import com.nammu.playminigame.clickgame.ClickGameActivity;
 
@@ -46,17 +47,16 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private final int CLICK_GAME_NO = 0;
-        private final int LONGCLICK_GAME_NO = 1;
+
 
         @OnClick(R.id.img_menu)
         public void onClick(View view){
             switch(getPosition()){
-                case CLICK_GAME_NO:
+                case MiniGameApplication.CLICK_GAME_NO:
                     Intent intent = new Intent(context, ClickGameActivity.class);
                     context.startActivity(intent);
                     break;
-                case LONGCLICK_GAME_NO:
+                case MiniGameApplication.LONGCLICK_GAME_NO:
                     Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
                     break;
             }

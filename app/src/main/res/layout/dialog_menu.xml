@@ -45,44 +45,54 @@
             android:background="@drawable/stroke" />
 
         <TextView
-            android:text="@string/clickgame_menu_level_easy"
-            android:id="@+id/tv_dialog_state"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black"
+            android:id="@+id/tv_dialog_level_easy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-        <TextView
-            android:text="@string/clickGame_menu_level_normal"
-            android:id="@+id/tv_dialog_edit"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:textSize="20dp"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
-
-        <TextView
-        android:text="@string/clickGame_menu_level_hard"
-        android:id="@+id/tv_dialog_delete"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:textSize="20dp"
-        android:paddingLeft="15dp"
-        android:textColor="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:layout_marginBottom="10dp" />
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/clickgame_menu_level_easy"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/tv_dialog_level_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/clickGame_menu_level_normal"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke" />
+
+        <TextView
+            android:id="@+id/tv_dialog_level_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/clickGame_menu_level_hard"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
 
     </LinearLayout>

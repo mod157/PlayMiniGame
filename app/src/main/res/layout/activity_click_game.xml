@@ -10,5 +10,5 @@
         android:id="@+id/fragment_clickgame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.nammu.playminigame.clickgame.fragment.EasyClickGame" />
+        android:name="com.nammu.playminigame.clickgame.fragment.EasyClickGameFragment" />
 </LinearLayout>

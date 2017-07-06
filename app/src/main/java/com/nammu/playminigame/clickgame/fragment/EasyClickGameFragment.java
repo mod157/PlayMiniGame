@@ -1,8 +1,9 @@
 package com.nammu.playminigame.clickgame.fragment;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +16,16 @@ import butterknife.ButterKnife;
  * Created by SunJae on 2017-06-05.
  */
 
-public class EasyClickGame extends Fragment {
-    public EasyClickGame(){}
+public class EasyClickGameFragment extends Fragment {
+    public EasyClickGameFragment(){}
+
+    /*Bundle bundle = new Bundle();
+        bundle.putParcelable("WifiData_Bundle",data);
+        fragment.setArguments(bundle);*/
+    public static Fragment newInstance(){
+        Fragment fragment = new EasyClickGameFragment();
+        return fragment;
+    }
 
     @Nullable
     @Override
@@ -29,5 +38,9 @@ public class EasyClickGame extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.set_toolbar);
+        toolbar.setTitle(getString(R.string.title_activity_add));
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
     }
 }

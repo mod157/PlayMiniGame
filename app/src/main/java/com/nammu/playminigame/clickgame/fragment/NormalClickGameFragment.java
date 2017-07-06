@@ -1,6 +1,6 @@
 package com.nammu.playminigame.clickgame.fragment;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -15,8 +15,13 @@ import butterknife.ButterKnife;
  * Created by SunJae on 2017-06-05.
  */
 
-public class NormalClickGame extends Fragment {
-    public NormalClickGame(){}
+public class NormalClickGameFragment extends Fragment {
+    public NormalClickGameFragment(){}
+
+    public static Fragment newInstance(){
+        Fragment fragment = new EasyClickGameFragment();
+        return fragment;
+    }
 
     @Nullable
     @Override
